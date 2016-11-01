@@ -39,7 +39,6 @@ public class URL_API_Validater {
 
 				UrlString="";
 				responsecode="Blank row in the input sheet";
-
 			}
 			else 
 			{

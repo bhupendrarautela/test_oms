@@ -129,6 +129,7 @@ public class OMS_Login extends Dictionary {
         JavascriptExecutor jse = (JavascriptExecutor)driver;
         jse.executeScript("arguments[0].scrollIntoView()", element2); 
         driver.findElement(By.xpath(xPath_RegisterCheckBox)).click();
+        System.out.println(driver.getCurrentUrl());
         
     }
     
@@ -149,17 +150,26 @@ public class OMS_Login extends Dictionary {
 		Thread.sleep(10000);
 		WebDriverWait wait = new WebDriverWait(driver, 5);
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("Add_New_Order")));
-
 		driver.findElement(By.xpath(Add_New_Order)).click();
-
+		
 	}
-      
+	
    }
     
     @Test(priority=6)
     public void All_URL_API_TEST() throws InterruptedException, IOException {
     	String[] args = null;
 		URL_API_Validater.main(args);
+    
     }
+    
+    @Test(priority=10000)
+   public void Close_Window()
+    {
+     
+   driver.quit();
+    	
+    }
+    
     
     }

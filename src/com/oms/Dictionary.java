@@ -6,7 +6,7 @@ package com.oms;
 	
 	 public static String OMS_Test_URL="http://localhost/css/angular-inventory/#/login/";
 
-	//Login page Localters
+	//Login page Locaters
 	public static String xPath_UserNameTextBox="//input[@type='text']";
 	public static String xPath_PasswordTextBox="//input[@type='password']";
 	public static String xPath_LoginSubmitButton="//button[@type='submit']";
@@ -28,12 +28,13 @@ package com.oms;
 	public static String xPath_RegisterLastNameTextBox="//*[contains(@placeholder,'Last')]";
 	public static String xPath_RegisterPasswordTextBox="//*[contains(@placeholder,'Password')]";
 	public static String xPath_RegisterPassword2TextBox="//*[contains(@placeholder,'Confirm')]";
-	public static String xPath_RegisterCheckBox="//div[@class='checkbox']";
+	public static String xPath_RegisterCheckBox="//i[@class='cr-icon fa fa-check']]";
 	
 	//Header
 	public static String xPath_Hedaer_Links ="//a[@class='ng-binding']";
 	
 	
+	
 	public static String Add_New_Order="//button[@type='button' and contains(., 'Add New User')]";
-
+  
 }

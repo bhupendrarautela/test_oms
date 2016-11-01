@@ -1,47 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="3" total="7" passed="4">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="27084" started-at="2016-10-28T10:14:13Z" finished-at="2016-10-28T10:14:40Z">
+  <suite name="Default suite" duration-ms="88090" started-at="2016-11-01T09:23:39Z" finished-at="2016-11-01T09:25:07Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="27084" started-at="2016-10-28T10:14:13Z" finished-at="2016-10-28T10:14:40Z">
+    <test name="Default test" duration-ms="88090" started-at="2016-11-01T09:23:39Z" finished-at="2016-11-01T09:25:07Z">
       <class name="com.oms.OMS_Login">
-        <test-method status="PASS" signature="before()[pri:0, instance:com.oms.OMS_Login@68be2bc2]" name="before" is-config="true" duration-ms="8498" started-at="2016-10-28T15:44:13Z" finished-at="2016-10-28T15:44:21Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:com.oms.OMS_Login@1593948d]" name="before" is-config="true" duration-ms="85955" started-at="2016-11-01T14:53:39Z" finished-at="2016-11-01T14:55:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="TryLogin_BlankUserID_Login()[pri:0, instance:com.oms.OMS_Login@68be2bc2]" name="TryLogin_BlankUserID_Login" duration-ms="1354" started-at="2016-10-28T15:44:21Z" finished-at="2016-10-28T15:44:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TryLogin_BlankUserID_Login -->
-        <test-method status="PASS" signature="TryLogin_Incorrect_Login()[pri:1, instance:com.oms.OMS_Login@68be2bc2]" name="TryLogin_Incorrect_Login" duration-ms="3519" started-at="2016-10-28T15:44:23Z" finished-at="2016-10-28T15:44:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TryLogin_Incorrect_Login -->
-        <test-method status="FAIL" signature="TryLogin_Correct_Login()[pri:2, instance:com.oms.OMS_Login@68be2bc2]" name="TryLogin_Correct_Login" duration-ms="2598" started-at="2016-10-28T15:44:26Z" finished-at="2016-10-28T15:44:29Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="FAIL" signature="Try_RegisterNewUser()[pri:4, instance:com.oms.OMS_Login@1593948d]" name="Try_RegisterNewUser" duration-ms="2096" started-at="2016-11-01T14:55:05Z" finished-at="2016-11-01T14:55:07Z">
+          <exception class="org.openqa.selenium.InvalidSelectorException">
             <message>
-              <![CDATA[Unable to locate element: {"method":"xpath","selector":"//button[@type='submit']"}
-Command duration or timeout: 260 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[The given selector //i[@class='cr-icon fa fa-check']] is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: Unable to locate an element with the xpath expression //i[@class='cr-icon fa fa-check']] because of the following error:
+SyntaxError: The expression is not a legal expression.
+Command duration or timeout: 22 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
 Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:48:19 -0700'
 System info: host: 'LAPTOP-VQQSI8R2', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 9ee46c52-8aea-434f-8543-5ddb74c2bcd7
-*** Element info: {Using=xpath, value=//button[@type='submit']}]]>
+Session ID: 2ca5bd19-1067-4841-b050-56bb10092730
+*** Element info: {Using=xpath, value=//i[@class='cr-icon fa fa-check']]}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//button[@type='submit']"}
-Command duration or timeout: 260 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[org.openqa.selenium.InvalidSelectorException: The given selector //i[@class='cr-icon fa fa-check']] is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: Unable to locate an element with the xpath expression //i[@class='cr-icon fa fa-check']] because of the following error:
+SyntaxError: The expression is not a legal expression.
+Command duration or timeout: 22 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
 Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:48:19 -0700'
 System info: host: 'LAPTOP-VQQSI8R2', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 9ee46c52-8aea-434f-8543-5ddb74c2bcd7
-*** Element info: {Using=xpath, value=//button[@type='submit']}
+Session ID: 2ca5bd19-1067-4841-b050-56bb10092730
+*** Element info: {Using=xpath, value=//i[@class='cr-icon fa fa-check']]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -53,80 +49,6 @@ Session ID: 9ee46c52-8aea-434f-8543-5ddb74c2bcd7
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at com.oms.OMS_Login.TryLogin_Correct_Login(OMS_Login.java:77)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:753)
-	at org.testng.TestRunner.run(TestRunner.java:607)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
-	at org.testng.TestNG.runSuites(TestNG.java:1124)
-	at org.testng.TestNG.run(TestNG.java:1096)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//button[@type='submit']"}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:48:19 -0700'
-System info: host: 'LAPTOP-VQQSI8R2', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
-Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/BHUPEN~1/AppData/Local/Temp/anonymous1166122414622153935webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:11187)
-	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/BHUPEN~1/AppData/Local/Temp/anonymous1166122414622153935webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:11196)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/BHUPEN~1/AppData/Local/Temp/anonymous1166122414622153935webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12705)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/BHUPEN~1/AppData/Local/Temp/anonymous1166122414622153935webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12710)
-	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/BHUPEN~1/AppData/Local/Temp/anonymous1166122414622153935webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12652)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TryLogin_Correct_Login -->
-        <test-method status="PASS" signature="Try_ResetPassword()[pri:3, instance:com.oms.OMS_Login@68be2bc2]" name="Try_ResetPassword" duration-ms="4675" started-at="2016-10-28T15:44:29Z" finished-at="2016-10-28T15:44:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Try_ResetPassword -->
-        <test-method status="FAIL" signature="Try_RegisterNewUser()[pri:4, instance:com.oms.OMS_Login@68be2bc2]" name="Try_RegisterNewUser" duration-ms="1019" started-at="2016-10-28T15:44:34Z" finished-at="2016-10-28T15:44:35Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Element <div class="checkbox" style="margin-top:0px;"></div> is not clickable at point (276.5, 569.4000244140625). Other element would receive the click: <main style="display: block;" data-loading=""></main>
-Command duration or timeout: 66 milliseconds
-Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:48:19 -0700'
-System info: host: 'LAPTOP-VQQSI8R2', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 9ee46c52-8aea-434f-8543-5ddb74c2bcd7]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Element <div class="checkbox" style="margin-top:0px;"></div> is not clickable at point (276.5, 569.4000244140625). Other element would receive the click: <main style="display: block;" data-loading=""></main>
-Command duration or timeout: 66 milliseconds
-Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:48:19 -0700'
-System info: host: 'LAPTOP-VQQSI8R2', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 9ee46c52-8aea-434f-8543-5ddb74c2bcd7
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:274)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
 	at com.oms.OMS_Login.Try_RegisterNewUser(OMS_Login.java:115)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -153,57 +75,25 @@ Session ID: 9ee46c52-8aea-434f-8543-5ddb74c2bcd7
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+Caused by: org.openqa.selenium.InvalidSelectorException: The given selector //i[@class='cr-icon fa fa-check']] is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: Unable to locate an element with the xpath expression //i[@class='cr-icon fa fa-check']] because of the following error:
+SyntaxError: The expression is not a legal expression.
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:48:19 -0700'
+System info: host: 'LAPTOP-VQQSI8R2', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.annotateInvalidSelectorError_(file:///C:/Users/BHUPEN~1/AppData/Local/Temp/anonymous239775819112875093webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:11161)
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/BHUPEN~1/AppData/Local/Temp/anonymous239775819112875093webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:11192)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/BHUPEN~1/AppData/Local/Temp/anonymous239775819112875093webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:11196)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/BHUPEN~1/AppData/Local/Temp/anonymous239775819112875093webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12705)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/BHUPEN~1/AppData/Local/Temp/anonymous239775819112875093webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12710)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/BHUPEN~1/AppData/Local/Temp/anonymous239775819112875093webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12652)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Try_RegisterNewUser -->
-        <test-method status="FAIL" signature="Test_header()[pri:5, instance:com.oms.OMS_Login@68be2bc2]" name="Test_header" duration-ms="9" started-at="2016-10-28T15:44:35Z" finished-at="2016-10-28T15:44:35Z">
-          <exception class="java.lang.IndexOutOfBoundsException">
-            <message>
-              <![CDATA[Index: 0, Size: 0]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
-	at java.util.ArrayList.rangeCheck(Unknown Source)
-	at java.util.ArrayList.get(Unknown Source)
-	at com.oms.OMS_Login.Test_header(OMS_Login.java:147)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:753)
-	at org.testng.TestRunner.run(TestRunner.java:607)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
-	at org.testng.TestNG.runSuites(TestNG.java:1124)
-	at org.testng.TestNG.run(TestNG.java:1096)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IndexOutOfBoundsException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test_header -->
-        <test-method status="PASS" signature="All_URL_API_TEST()[pri:6, instance:com.oms.OMS_Login@68be2bc2]" name="All_URL_API_TEST" duration-ms="5372" started-at="2016-10-28T15:44:35Z" finished-at="2016-10-28T15:44:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- All_URL_API_TEST -->
       </class> <!-- com.oms.OMS_Login -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

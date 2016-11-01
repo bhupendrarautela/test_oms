@@ -5,9 +5,7 @@
     <classes>
       <class name="com.oms.OMS_Login">
         <methods>
-          <include name="TryLogin_Correct_Login"/>
           <include name="before"/>
-          <include name="Test_header"/>
           <include name="Try_RegisterNewUser"/>
         </methods>
       </class> <!-- com.oms.OMS_Login -->
